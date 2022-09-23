@@ -4,7 +4,12 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const input = document.querySelector('footer')
+input.addEventListener('click', mimicServerCall)
 
+mimicServerCall()
+.then (obj => console.log(obj))
+.catch (error => console.log(error.message))
 
 
 //------------------------------------------------------------------------------
